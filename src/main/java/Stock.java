@@ -13,7 +13,7 @@ public class Stock implements Serializable {
 	private String azienda;
 	private Double close;
 	private Double open;
-	private Integer volume;
+	private Long volume;
 	private Date data;
 	
 	public Stock() {
@@ -60,11 +60,11 @@ public class Stock implements Serializable {
 		this.open = open;
 	}
 
-	public Integer getVolume() {
+	public Long getVolume() {
 		return volume;
 	}
 
-	public void setVolume(Integer volume) {
+	public void setVolume(Long volume) {
 		this.volume = volume;
 	}
 

@@ -15,7 +15,7 @@ public class Parser {
 			out.setTicker(parts[HistoricalStockPricesConstants.TICKER]);
 			out.setClose(Double.parseDouble(parts[HistoricalStockPricesConstants.CLOSE]));			
 			out.setOpen(Double.parseDouble(parts[HistoricalStockPricesConstants.OPEN]));
-			out.setVolume(Integer.parseInt(parts[HistoricalStockPricesConstants.VOLUME]));
+			out.setVolume(Long.parseLong(parts[HistoricalStockPricesConstants.VOLUME]));
 			data = format.parse(parts[HistoricalStockPricesConstants.DATE]);
 			out.setData(data);
 		}catch(Exception e) {
@@ -30,7 +30,6 @@ public class Parser {
 		out.setTicker(parts[HistoricalStocksConstants.TICKER]);
 		out.setSector(parts[HistoricalStocksConstants.SECTOR]);
 		out.setAzienda(parts[HistoricalStocksConstants.NAME]);
-
 		return out;
 	}
 	
