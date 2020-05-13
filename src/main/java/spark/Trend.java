@@ -1,9 +1,5 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
+package spark;
 import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 
 import org.apache.spark.SparkConf;
@@ -12,7 +8,11 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
 import avro.shaded.com.google.common.collect.Sets;
+import models.AuxStockInfo;
+import models.Stock;
 import scala.Tuple2;
+import utility.Parser;
+import utility.StockUtility;
 
 public class Trend {
 

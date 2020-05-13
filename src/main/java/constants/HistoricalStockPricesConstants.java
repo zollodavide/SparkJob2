@@ -1,3 +1,4 @@
+package constants;
 
 public class HistoricalStockPricesConstants {
 	public static final int TICKER = 0;    

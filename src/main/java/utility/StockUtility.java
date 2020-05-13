@@ -1,3 +1,5 @@
+package utility;
+import models.Stock;
 
 public class StockUtility {
 	

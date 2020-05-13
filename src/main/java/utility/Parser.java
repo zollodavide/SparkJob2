@@ -1,7 +1,13 @@
+package utility;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
+
+import constants.HistoricalStockPricesConstants;
+import constants.HistoricalStocksConstants;
+import models.AuxStockInfo;
+import models.Stock;
 
 public class Parser {
 
