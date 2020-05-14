@@ -52,15 +52,16 @@ public class Trend {
 						"Mean Volume: " + tup._2()._1()._1() 
 						+", Mean Difference: " +  tup._2()._1()._2()
 						+"%, Mean Quotation: " + tup._2()._2()))
-				.sortByKey(new Comparator<Tuple2<String, Integer>>() {
-						@Override
-						public int compare(Tuple2<String, Integer> t1, Tuple2<String, Integer> t2) {
-							int i = t1._1().compareTo(t2._1());
-							if(i == 0)
-								return t1._2().compareTo(t2._2());
-							return i;
-						}
-					});
+//				.sortByKey(new Comparator<Tuple2<String, Integer>>() {
+//						@Override
+//						public int compare(Tuple2<String, Integer> t1, Tuple2<String, Integer> t2) {
+//							int i = t1._1().compareTo(t2._1());
+//							if(i == 0)
+//								return t1._2().compareTo(t2._2());
+//							return i;
+//						}
+//					})
+				;
 
 		stampa(output);
 		return output;
